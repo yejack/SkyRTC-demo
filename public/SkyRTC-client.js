@@ -52,7 +52,7 @@
         //本地media stream
         this.localMediaStream = null;
         //所在房间
-        this.room = "111";
+        this.room = "";
         //接收文件时用于暂存接收文件
         this.fileData = {};
         //本地WebSocket连接
