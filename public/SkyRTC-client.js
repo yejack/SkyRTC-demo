@@ -1,4 +1,4 @@
-var SkyRTC = function() {
+﻿var SkyRTC = function() {
     var PeerConnection = (window.PeerConnection || window.webkitPeerConnection00 || window.webkitRTCPeerConnection || window.mozRTCPeerConnection);
     var URL = (window.URL || window.webkitURL || window.msURL || window.oURL);
     var getUserMedia = (navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia);
@@ -52,7 +52,7 @@ var SkyRTC = function() {
         //本地media stream
         this.localMediaStream = null;
         //所在房间
-        this.room = "";
+        this.room = "111";
         //接收文件时用于暂存接收文件
         this.fileData = {};
         //本地WebSocket连接
