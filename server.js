@@ -1,8 +1,12 @@
 ﻿var express = require('express');
 var app = express();
-var server = require('http').createServer(app);
+var https = require('https');
+var fs = require('fs')
+var server = https.createServer({
+  key: fs.readFileSync('/path/to/your.key'),
+  cert: fs.readFileSync('/path/to/your.crt')
+}, app);
 var SkyRTC = require('skyrtc').listen(server);
-var path = require("path");
 
 var port = process.env.PORT || 3000;
 server.listen(port);
