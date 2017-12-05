@@ -1,20 +1,24 @@
-#一个简单的SkyRTC示例
----
-##简介
-这是一个使用SkyRTC和SkyRTC-client搭建浏览器中音频、视频、文字聊天室的Demo
+CSc 47300 Fall 2017 Project: Improv-Chatroom-master
 
-##安装和使用
-1. 安装Node.js及npm环境
-2. 下载源码到本地，并解压缩
-3. 移动到解压后的目录下
-4. 使用命令`npm install`安装所需要的库
-5. 运行命令`node server.js`，建议配合`forever`
-6. 访问`localhost:3000#roomName`查看效果，其中`roomName`为进入的房间名，不同房间的用户无法互相通信
+Front-End: Html/CSS
+Server: FLASK
+Back-end: Python
 
-##功能说明
-支持划分房间的在线音频、视频、文字聊天，提供房间内文件共享功能
+To Run The App:
+First: install flask, and flask-wtf (may need create a venv mode)
+Second: python application.py
 
-##SkyRTC项目链接
-[SkyRTC项目](https://github.com/LingyuCoder/SkyRTC)
+To Run the Test:
+First: Install pytest
+second: run py.test or pytest, either of them work!
+(notes: someone may received error of version problem of flask that related to blinker.
+Solution is install blinker by using pip)
 
-[SkyRTC-client项目](https://github.com/LingyuCoder/SkyRTC-client)
+Deploy Using Heroku:
+https://limitless-island-91246.herokuapp.com/create
+
+Warning: to add/change new style in external file, don't be worried about if the page
+didn't make any change. You need to refresh the css file in website in order make it work in html,
+if this still didn't work, you need to inspect element -> source -> find the css file -> fresh.
+For exmaple, if you change/add something in chatroom.css. Refresh the page of 127.../static/css/chatroom.css
+make sure the change/addition you made is in there, refresh the html page.
